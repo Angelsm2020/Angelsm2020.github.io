@@ -57,7 +57,7 @@ var questions = [{
         A: "The number of things you have killed in a game",
         B: "A cheat code",
         C: "A french bag",
-        D: "A burrowing marsupial that lives in the south Australian outback and feeds on grubs, rocks and dice",
+        D: "A burrowing marsupial that lives in the south Australian outback",
         correct: "A",
     },
 
@@ -90,7 +90,7 @@ var questions = [{
     },
 
     {
-        question: "Pac-Man is often credited with being a landmark in video game history, and is among the most famous arcade games of all time. In the classic game Pac-Man if you wanted to eat a ghost for bonus points you first had to eat what?",
+        question: "In the classic game Pac-Man if you wanted to eat a ghost for bonus points you first had to eat what?",
         A: "Fruit",
         B: "Pac-dot",
         C: "Power-pellet",

@@ -101,10 +101,10 @@ var questions = [{
     {
         question: "How could you improve your digital footprint?",
         A: "Its best not to post anything if you want to stay safe",
-        B: "Check your social media privacy settings to make sure you’re only sharing with people you know and trust",
-        C: "Its not necessary to think before you post",
+        B: "Its not necessary to think before you post",
+        C: "Check your social media privacy settings to make sure you’re only sharing with people you know and trust",
         D: "Share your personal information with a good friend or family member so they can help you stay safe online",
-        correct: "B",
+        correct: "C",
     },
 
 ];
@@ -143,7 +143,7 @@ function store() {
 
 // timer function
 
-var time = 15;
+var time = 30;
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 

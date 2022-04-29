@@ -282,11 +282,13 @@ p {
     #b,
     #c,
     #d {
-        font-size: 12px;
+        font-size: 8px;
     }
     .quizQuestions {
-        padding: 1.5em 2em;
+        padding: 0.5em 2em;
         width: 95%;
+        font-size: 0.8rem;
+        height: 350px;
     }
     .myButton {
         padding: 15px 28px;

@@ -146,6 +146,7 @@ div {
         transition: all 0.5s ease-in;
         overflow-x: hidden;
         justify-content: initial;
+        z-index: 999;
     }
     .burger {
         display: block;
@@ -264,6 +265,9 @@ button:hover {
     }
     p {
         font-size: 1.5rem;
+    }
+    logo {
+        margin-top: -20px;
     }
 }
 
