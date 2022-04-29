@@ -146,7 +146,7 @@ div {
         transition: all 0.5s ease-in;
         overflow-x: hidden;
         justify-content: initial;
-        z-index: 999;
+        z-index: 9;
     }
     .burger {
         display: block;
@@ -154,6 +154,7 @@ div {
         top: 30px;
         right: 5px;
         cursor: pointer;
+        z-index: 99;
     }
     .nav-active {
         transform: translateX(0%);
