@@ -1,0 +1,197 @@
+<!-- Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - faq page 
+ reference: https://codepen.io/missmushroom/pen/ZjdPJb 
+            https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+            https://www.w3schools.com/html/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowHow Quiz/faq</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./faq.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!------------------- navbar start here  --------------------->
+
+    <nav class="nav">
+        <section class="Main_navbar">
+            <div class="logo">
+                <a href="./index.html #home">Know-How</a>
+            </div>
+            <!-- button -->
+
+            <a class="cta" id="feedback" href="mailto:40537396@live.napier.ac.uk"><button>Feedback</button></a>
+
+            <ul class="nav_links1">
+
+                <li><a class="active" href="./index.html #home">Home</a></li>
+                <li>
+                    <a href="./index.html #aboutus">About Us &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./vision.html">Our Vision</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#quiz">Quizzes &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./scotQuiz/scotquiz.html">Scotland Quiz</a></li>
+                        <li><a href="./digQuiz/digquiz.html">Digital Footprint Quiz</a></li>
+                        <li><a href="./gamerQuiz/gamerquiz.html">Gamer Quiz</a></li>
+                        <li><a href="./marsQuiz/marsquiz.html">Mars Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index.html #find">Find Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+        </section>
+    </nav>
+
+    <!--------------------------- navbar end here ------------------------->
+
+
+    <!-- ========================== FAQ section start ================ -->
+
+    <div class="faq_heading" id="faq">
+        <h2 class="text-center">❓Frequently Asked Questions</h2>
+    </div>
+
+    <main class="page-content">
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>“Can I keep track of how I do on the quizzes?"</h2>
+                <p class="data-content">
+                    Yes your score will be stored in your local browser and accessed via 'My Latest Score' button.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>"Can I Play a Quiz More than Once?"</h2>
+                <p class="data-content">
+                    Yes, you can play every quiz as many times as you like. All of your scores will be recorded and can be accessed by 'My Scoreboard' button.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>"What learning methods does Know-How apply?"</h2>
+                <p class="data-content">
+                    Know-How believes in fun and free learning for all ages and gender. The quizzes are engaging and informative. Help or lifelines are available if you find stuck in between.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>"Are the Quizzes Copyrighted?"</h2>
+                <p class="data-content">
+                    Yes, all our quizzes are subject to copyright restriction.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>"How do I Select a Quiz to Play?"</h2>
+                <p class="data-content">
+                    You can choose a specific quiz either from dropdown menu of 'Quizzes' or by clicking the relevant 'Take the Quiz' button. It will lead you to the quiz page where you can press the 'start quiz' button or read instructions by ckicking 'Basic Rules' button.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq_card">
+            <div class="content">
+                <h2 class="heading">❓<br><br>"How is my Score Recorded if I Abandon a Quiz Before it is Finished?"</h2>
+                <p class="data-content">
+                    Your record will not show a score unless you finish a quiz.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ========================== FAQ section end ===================== -->
+
+    <!--================================= footer section start =======================-->
+    <footer class="footer">
+        <div class="footer_addr">
+            <h1 class="footer_logo">Know-How</h1>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+            <address>
+              Merchiston Campus, <br>
+              Edinburgh Napier University, Edinburgh EH10 5DT<br>   
+            </address>
+        </div>
+
+        <ul class="footer_nav">
+            <li class="footernav_item">
+                <h2 class="footernav_title">Important Information</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./privacy.html">Privacy Policy</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Terms of Use</a>
+                    </li> -->
+                </ul>
+                <br>
+                <!-- <a class="cta" id="myBtn1"><button>My Latest Score</button></a>
+                <p class="textBox" id="myscore"></p> -->
+            </li>
+
+            <li class="footernav_item">
+                <h2 class="footernav_title">Useful Links</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./index.html #home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #quiz">Quizzes</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQs</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer_legal">
+            <p> Copyright &copy; 2022, All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========================== footer section end ============================-->
+
+
+    <!-- ========================= javascripts ==================================== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="./main.js "></script>
+    <script src="./scotQuiz/scotquiz.js "></script>
+
+</body>
+
+</html>

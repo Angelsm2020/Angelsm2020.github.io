@@ -1,0 +1,185 @@
+<!-- Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - faq page 
+ reference: https://codepen.io/missmushroom/pen/ZjdPJb 
+            https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+            https://www.w3schools.com/html/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowHow Quiz/faq</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./faq.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!------------------- navbar start here  --------------------->
+
+    <nav class="nav">
+        <section class="Main_navbar">
+            <div class="logo">
+                <a href="./index.html #home">Know-How</a>
+            </div>
+            <!-- button -->
+
+            <a class="cta" id="feedback" href="mailto:40537396@live.napier.ac.uk"><button>Feedback</button></a>
+
+            <ul class="nav_links1">
+
+                <li><a class="active" href="./index.html #home">Home</a></li>
+                <li>
+                    <a href="./index.html #aboutus">About Us &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./vision.html">Our Vision</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#quiz">Quizzes &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./scotQuiz/scotquiz.html">Scotland Quiz</a></li>
+                        <li><a href="./digQuiz/digquiz.html">Digital Footprint Quiz</a></li>
+                        <li><a href="./gamerQuiz/gamerquiz.html">Gamer Quiz</a></li>
+                        <li><a href="./marsQuiz/marsquiz.html">Mars Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index.html #find">Find Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+        </section>
+    </nav>
+
+    <!--------------------------- navbar end here ------------------------->
+
+
+    <!-- ========================== FAQ section start ================ -->
+
+    <!-- ==================== feedback section ============================= -->
+    <div class="feedback" id="privacy">
+        <h2>Know-How Privacy Policy..</h2>
+        <h3 style="color:wheat;font-size:2.5rem">Know-How is committed to respecting the privacy of visitors.</h3>
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/backgr2.jpg" style="width:100%">
+
+                <div class="feedback_text">Data Security <br><br> Know-How complies with industry standards of data security. However, we cannot guarantee the security of your Personal Information, and do not assume any liability for any disclosure of data due to errors in transmission,
+                    unauthorised third party access or other acts of third parties, or acts or omissions beyond their reasonable control.
+
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/backgr2.jpg" style="width:100%">
+
+                <div class="feedback_text">Personal Information <br><br> Know-How will use the information that you provide us for marketing purposes and to notify you about improvements and enhancements to our online shop. We would like to keep you informed about our products
+                    and services and notify you of special offers that we think may be of interest to you.
+
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/backgr2.jpg" style="width:100%">
+
+                <div class="feedback_text">How long we keep your data <br><br> We will only retain your personal data for as long as it is needed for the purposes set out in this document or for as long as the law requires us to.<br> We will:<br> keep your email data until you
+                    unsubscribe
+                    <br> keep your feedback data for 2 years<br> delete access log data which contain your IP address after 120 days
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="feedbackdot"></span>
+            <span class="feedbackdot"></span>
+            <span class="feedbackdot"></span>
+        </div>
+    </div>
+
+
+    <!-- ================== feedback section end ======================== -->
+    <!-- ========================== FAQ section end ===================== -->
+
+    <!--================================= footer section start =======================-->
+    <footer class="footer">
+        <div class="footer_addr">
+            <h1 class="footer_logo">Know-How</h1>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+            <address>
+              Merchiston Campus, <br>
+              Edinburgh Napier University, Edinburgh EH10 5DT<br>   
+            </address>
+        </div>
+
+        <ul class="footer_nav">
+            <li class="footernav_item">
+                <h2 class="footernav_title">Important Information</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="#privacy">Privacy Policy</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Terms of Use</a>
+                    </li> -->
+                </ul>
+                <br>
+                <!-- <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>My Scoreboard</button></a> -->
+            </li>
+
+            <li class="footernav_item">
+                <h2 class="footernav_title">Useful Links</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./index.html #home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #quiz">Quizzes</a>
+                    </li>
+                    <li>
+                        <a href="./faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer_legal">
+            <p> Copyright &copy; 2022, All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========================== footer section end ============================-->
+
+
+    <!-- ========================= javascripts ==================================== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="./main.js "></script>
+    <script src="./quiz.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+/* Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - Digital Footprint quiz css
+ References: https://fedingo.com/how-to-shuffle-array-in-javascript/
+            https://codepen.io/Liberacorpus/pen/bGrNvLW
+            https://www.w3schools.com/ai/tryit.asp?filename=tryai_chartjs_bars_colors_more */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Palette+Mosaic&display=swap');
+body {
+    opacity: 0.95;
+    background-image: url(../images/q1.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* width: 100%;
+    height: auto; */
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ======================== quiz landing =========================== */
+
+#begin {
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    padding: 2rem;
+    background-color: #461a42;
+    box-shadow: 3px 3px 3px grey;
+    opacity: .9;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+/* ====================== Quiz End page ============================= */
+
+#quizEnd {
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    padding: 2rem;
+    background-color: #461a42;
+    box-shadow: 3px 3px 3px grey;
+    opacity: .9;
+    border-radius: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.textBox {
+    font-size: 20px;
+    text-align: center !important;
+    padding: 15px;
+}
+
+.textBox2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 35px;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+/* =========timer======== */
+
+.timer {
+    color: #d48bcd;
+    background: #d48bcd;
+    border: 1px solid #d48bcd;
+    height: 45px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.timer .time_left_txt {
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.timer .timer_sec {
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+
+/* ====================== Quiz questions and Life lines ===================================== */
+
+.quizQuestions {
+    background-color: white;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    border-radius: 10px;
+    /* border: 2px solid #008CBA; */
+    width: 70%;
+    height: 35em;
+    background-position: center;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-size: 100% 18em;
+}
+
+.question {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: .8;
+}
+
+.question p {
+    padding: 1rem;
+    text-align: center;
+    color: #461a42;
+    font-weight: bold;
+}
+
+#mainQuiz {
+    float: left;
+    width: 75%;
+}
+
+
+/* ======================== score display ============================== */
+
+#scoreDisplay {
+    width: 20%;
+    float: right;
+    color: white;
+    background: rgba(21, 22, 23, .6);
+}
+
+.score {
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+    padding: 0.5rem;
+    font-weight: 300;
+}
+
+.score img {
+    width: 15%;
+    height: auto;
+    margin: -3px;
+}
+
+#a,
+#b,
+#c,
+#d {
+    width: 40%;
+    padding: 1.2rem;
+    margin: 1rem;
+    display: inline-table;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 2px;
+    font-size: 18px;
+    background-color: white;
+    opacity: .9;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0088a9;
+}
+
+#restart {
+    display: inline-table;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: #d48bcd !important;
+    opacity: .8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.align-text {
+    text-align: center!important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.quizQuestions {
+    padding: 1.5em 3em;
+    margin-top: 3em;
+    background: rgba(21, 22, 23, .6);
+    border-radius: 10px;
+    text-align: center;
+    margin: 3rem;
+    width: 100%;
+}
+
+.align-text {
+    text-align: center;
+}
+
+.myButton {
+    padding: 20px 30px;
+}
+
+
+/* ========info block and footer ============== */
+
+#myDIV {
+    display: none;
+    background-color: #461a42;
+    border-radius: 12px;
+}
+
+.footer {
+    display: inline-flex !important;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/* =================== chart ========================= */
+
+#myChart {
+    display: none;
+}
+
+
+/* ============== changes from main css: =============*/
+
+.nav_links1 a {
+    margin: 150px !important;
+}
+
+.logo a {
+    font-family: 'Palette Mosaic', cursive, sans-serif;
+}
+
+
+/* =================================================== */
+
+
+/* ====================media query =================== */
+
+@media screen and (max-width: 768px) {
+    #a,
+    #b,
+    #c,
+    #d {
+        font-size: 12px;
+    }
+    .quizQuestions {
+        padding: 1.5em 2em;
+        width: 95%;
+    }
+    .myButton {
+        padding: 15px 28px;
+    }
+    #restart {
+        font-size: 15px;
+    }
+    .logo {
+        margin-top: -10px;
+    }
+    #rules {
+        margin-top: 50px;
+    }
+}
+
+
+/* =============================================== */
+
+#myscore {
+    display: none;
+    background-color: #ffffff38;
+    border-radius: 12px;
+}

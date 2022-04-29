@@ -1,0 +1,198 @@
+/* Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - our vision page css 
+ reference: https://codepen.io/missmushroom/pen/ZjdPJb 
+            https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+            https://www.w3schools.com/html/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Palette+Mosaic&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    transition: all .3s ease 0s;
+    background: #d48bcd;
+    text-align: center;
+}
+
+li,
+a,
+button,
+div {
+    color: #edf0f1;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ================== vision section ==================== */
+
+.vision {
+    width: 100%;
+    height: 100vh;
+    background-position: center top;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    line-height: 1.1;
+    color: #371f1b;
+    font-size: 3.5rem
+}
+
+h4 {
+    line-height: 1.1;
+    color: #680357;
+    font-size: 2.5rem
+}
+
+.text {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 165%;
+    height: 100vh;
+}
+
+.vision_text {
+    background: rgba( 255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 0px);
+    -webkit-backdrop-filter: blur( 0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    width: 70%;
+    padding: 4rem 0rem;
+}
+
+p {
+    padding-block: 2em;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    color: #680357;
+    font-weight: bold;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 0.5em;
+    padding: 0.8em 1em;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: #d48bcd;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    animation: movehome 1s .5s forwards;
+}
+
+button:hover {
+    background-color: #0088A9;
+    letter-spacing: .2rem;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/about2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* media query  */
+
+@media only screen and (max-width: 600px) {
+    .text {
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.0rem;
+    }
+    h4 {
+        font-size: 2.0rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vision_text {
+        width: 60%
+    }
+}
+
+
+/* ======================= history section ===================================== */
+
+:root {
+    --d: 1000ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.history_heading {
+    text-align: center;
+}
+
+.history_heading h2 {
+    font-size: 4.5rem !important;
+    color: #371f1b;
+}
+
+.history_heading h3 {
+    font-size: 2.5rem !important;
+    color: #8d4387;
+    padding: 5px;
+}
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+@media (min-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .history_heading h2 {
+        font-size: 2.5rem;
+    }
+    .history_heading h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

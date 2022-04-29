@@ -1,0 +1,536 @@
+<!-- Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - main home page 
+ reference: https://codepen.io/missmushroom/pen/ZjdPJb 
+            https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+            https://www.w3schools.com/html/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowHow Quiz</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- for swiper function in quiz section -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!------------------- navbar start here  --------------------->
+
+    <nav class="nav">
+        <section class="Main_navbar">
+            <div class="logo">
+                <a href="#home">Know-How</a>
+            </div>
+            <!-- button -->
+
+            <a class="cta" id="feedback" href="mailto:40537396@live.napier.ac.uk"><button>Feedback</button></a>
+
+            <ul class="nav_links1">
+
+                <li><a class="active" href="#home">Home</a></li>
+                <li>
+                    <a href="#aboutus">About Us &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./vision.html">Our Vision</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#quiz">Quizzes &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./scotQuiz/scotquiz.html">Scotland Quiz</a></li>
+                        <li><a href="./digQuiz/digquiz.html">Digital Footprint Quiz</a></li>
+                        <li><a href="./gamerQuiz/gamerquiz.html">Gamer Quiz</a></li>
+                        <li><a href="./marsQuiz/marsquiz.html">Mars Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="#find">Find Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+        </section>
+    </nav>
+
+    <!--------------------------- navbar end here ------------------------->
+
+    <!-- ===================== home section start ===================== -->
+
+    <div class="main_home" id="home">
+        <div class="image">
+            <div class="text">
+                <div class="home_text">
+                    <h1>Enhance Your Knowledge with Know-How Quizzes</h1>
+                    <h4>We’re Here to Help You Realize Your Full Potential</h4>
+                    <p>
+                        Test and grow your knowledge about the different facets of life and world.
+                        </br>
+                        Unleash interesting facts you didn’t know earlier.
+                    </p>
+                    <a class="start_btn" href="./scotQuiz/scotquiz.html"><button>Take the Quiz</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================== home section end =============================== -->
+
+    <!-- ================= Quizzes section start  ========================== -->
+
+    <div class="bdt-timeline-container" id="quiz">
+        <div class="upk-self-slider-wrapper">
+            <div class="swiper-container mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="upk-self-item swiper-slide">
+                        <div class="upk-self-image-wrap">
+                            <img class="upk-xanc-img" src="./images/q4.jpg" alt="" />
+                        </div>
+                        <div class="upk-self-content-wrap">
+                            <h3 class="upk-self-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                How well do you know Scotland?
+                            </h3>
+                            <div class="upk-self-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                Test your knowledge about Scotland in a fun and interactive way!
+                            </div>
+                            <div class="upk-self-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
+                                <a class="link link--arrowed" href="./scotQuiz/scotquiz.html">Take the Quiz
+                    <svg
+                      class="arrow-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 32 32"
+                    >
+                      <g
+                        fill="none"
+                        stroke="#ff215a"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      >
+                        <circle
+                          class="arrow-icon--circle"
+                          cx="16"
+                          cy="16"
+                          r="15.12"
+                        ></circle>
+                        <path
+                          class="arrow-icon--arrow"
+                          d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upk-self-item swiper-slide">
+                        <div class="upk-self-image-wrap">
+                            <img class="upk-xanc-img" src="./images/q1.png" alt="" />
+                        </div>
+                        <div class="upk-self-content-wrap">
+                            <h3 class="upk-self-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                What is your digital footprint?
+                            </h3>
+                            <div class="upk-self-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                Find out about your digital habits, footprint and how you can stay safe by adopting safe digital practices.
+                            </div>
+
+                            <div class="upk-self-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
+                                <a class="link link--arrowed" href="./digQuiz/digquiz.html">Take the Quiz
+                    <svg
+                      class="arrow-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 32 32"
+                    >
+                      <g
+                        fill="none"
+                        stroke="#ff215a"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      >
+                        <circle
+                          class="arrow-icon--circle"
+                          cx="16"
+                          cy="16"
+                          r="15.12"
+                        ></circle>
+                        <path
+                          class="arrow-icon--arrow"
+                          d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upk-self-item swiper-slide">
+                        <div class="upk-self-image-wrap">
+                            <img class="upk-xanc-img" src="./images/q6.jpg" />
+                        </div>
+                        <div class="upk-self-content-wrap">
+                            <h3 class="upk-self-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                Ultimate Gamer Quiz!
+                            </h3>
+                            <div class="upk-self-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                This quiz features general knowledge questions about video games from the past and present.
+                            </div>
+
+                            <div class="upk-self-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
+                                <a class="link link--arrowed" href="./gamerQuiz/gamerquiz.html">Take the Quiz
+                    <svg
+                      class="arrow-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 32 32"
+                    >
+                      <g
+                        fill="none"
+                        stroke="#ff215a"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      >
+                        <circle
+                          class="arrow-icon--circle"
+                          cx="16"
+                          cy="16"
+                          r="15.12"
+                        ></circle>
+                        <path
+                          class="arrow-icon--arrow"
+                          d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upk-self-item swiper-slide">
+                        <div class="upk-self-image-wrap">
+                            <img class="upk-xanc-img" src="./images/q2.jpg" />
+                        </div>
+                        <div class="upk-self-content-wrap">
+                            <h3 class="upk-self-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">
+                                Mission to Mars: Facts or Fiction?
+                            </h3>
+                            <div class="upk-self-desc" data-swiper-parallax-y="-200" data-swiper-parallax-duration="1400">
+                                How much do you know about your neighbouring planet? Find out with this intriguing quiz!
+                            </div>
+
+                            <div class="upk-self-button" data-swiper-parallax-y="-300" data-swiper-parallax-duration="1500">
+                                <a class="link link--arrowed" href="./marsQuiz/marsquiz.html">Take the Quiz
+                    <svg
+                      class="arrow-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 32 32"
+                    >
+                      <g
+                        fill="none"
+                        stroke="#ff215a"
+                        stroke-width="1.5"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      >
+                        <circle
+                          class="arrow-icon--circle"
+                          cx="16"
+                          cy="16"
+                          r="15.12"
+                        ></circle>
+                        <path
+                          class="arrow-icon--arrow"
+                          d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="upk-page-scroll">
+                <a class="arrow-up">
+                    <div class="long-arrow-left"></div>
+                    <span class="arrow-slide"></span>
+                </a>
+            </div>
+            <div class="upk-self-nav-pag-wrap">
+                <div class="upk-self-navigation">
+                    <div class="upk-button-prev upk-n-p">
+                        <a class="link link--arrowed" href="#">
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
+                  <g
+                    fill="none"
+                    stroke="#ff215a"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                  >
+                    <circle
+                      class="arrow-icon--circle"
+                      cx="16"
+                      cy="16"
+                      r="15.12"
+                    ></circle>
+                    <path
+                      class="arrow-icon--arrow"
+                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                    ></path>
+                  </g>
+                </svg>
+                        </a>
+                    </div>
+                    <div class="upk-button-next upk-n-p">
+                        <a class="link link--arrowed" href="#">
+                            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 32">
+                  <g
+                    fill="none"
+                    stroke="#ff215a"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    stroke-miterlimit="10"
+                  >
+                    <circle
+                      class="arrow-icon--circle"
+                      cx="16"
+                      cy="16"
+                      r="15.12"
+                    ></circle>
+                    <path
+                      class="arrow-icon--arrow"
+                      d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"
+                    ></path>
+                  </g>
+                </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="upk-self-pagi-wrap">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================= Quizzes section end ========================== -->
+
+
+    <!-- ========================== aboutus section start ================ -->
+
+    <div class="about_heading" id="aboutus">
+        <h2 class="text-center">Why Know-How?</h2>
+        <h3 class="text-center">“Knowledge has a beginning but no end.” Geeta Iyengar
+            </br>
+            “A person without the knowledge of their past history, origin and culture is like a tree without roots.” Marcus Garvey</h3>
+    </div>
+    <main class="page-content">
+        <div class="about_card">
+            <div class="content">
+                <h2 class="heading">Learn the Easy Way</h2>
+                <p class="data-content">
+                    Save time searching, with quizzes that cover interesting areas of life you need to know. The questions are randomly generated from the question banks.
+                </p>
+            </div>
+        </div>
+        <div class="about_card">
+            <div class="content">
+                <h2 class="heading">Resourced Content</h2>
+                <p class="data-content">
+                    We’re not reinventing the wheel. Our content is sourced from best-selling books read by millions before you.
+                </p>
+            </div>
+        </div>
+        <div class="about_card">
+            <div class="content">
+                <h2 class="heading">Instant Feedback</h2>
+                <p class="data-content">
+                    You don't have to wait for the scores and feedback, get results instantly on the screen with an option to save your score or retake the quiz.
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <!-- ========================== aboutus section end ===================== -->
+
+
+    <!-- ==================== feedback section ============================= -->
+    <div class="feedback">
+        <h2>What do our Users say..</h2>
+
+        <div class="slideshow-container">
+
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/feedback1.jpg" style="width:100%">
+                <div class="star">
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                </div>
+                <br>
+                <div class="feedback_text">"I have enjoyed taking these quizzes and learnt new interesting facts alongside!"
+                    </br>
+                    <p>- Anna Bolder, Edinburgh </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/feedback1.jpg" style="width:100%">
+                <div class="star">
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                </div>
+                <br>
+                <div class="feedback_text">"Fantastic website and definitely an incredible learning process!"
+                    </br>
+                    <p>- Quinn Avery, Boston </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/feedback1.jpg" style="width:100%">
+                <div class="star">
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                    <span style="font-size:500%;color:red;">&starf;</span>
+                </div>
+                <br>
+                <div class="feedback_text">"This is the best website i have ever used to learn facts in a fun way!"
+                    </br>
+                    <p>- Emily Williams, London </p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="feedbackdot"></span>
+            <span class="feedbackdot"></span>
+            <span class="feedbackdot"></span>
+        </div>
+    </div>
+
+
+    <!-- ================== feedback section end ======================== -->
+
+
+    <!-- ================== findus section start ======================== -->
+
+    <div class="findus" id="find">
+        <img src="./images/findus.jpg" alt="findus" style="width:100%;">
+        <div class="findus_text">
+            <h1>Findus</h1>
+            <p>Merchiston Campus,</p>
+            <p>Edinburgh Napier University, Edinburgh EH10 5DT</p>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+        </div>
+    </div>
+    <!-- Google Map Copied Code
+        reference: https://www.geeksforgeeks.org/how-to-add-google-map-inside-html-page-without-using-api-key/ -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.9268229710997!2d-3.2178776846532546!3d55.93330648552411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7094d1a3ff9%3A0x63b967e8d1488094!2sEdinburgh%20Napier%20University%20Merchiston%20Campus!5e0!3m2!1sen!2suk!4v1648484515546!5m2!1sen!2suk"
+        width=100% height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- ================================ findus section end ========================-->
+
+
+
+    <!--================================= footer section start =======================-->
+    <footer class="footer">
+        <div class="footer_addr">
+            <h1 class="footer_logo">Know-How</h1>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+            <address>
+              Merchiston Campus, <br>
+              Edinburgh Napier University, Edinburgh EH10 5DT<br>   
+            </address>
+        </div>
+
+        <ul class="footer_nav">
+            <li class="footernav_item">
+                <h2 class="footernav_title">Important Information</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./privacy.html">Privacy Policy</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Terms of Use</a>
+                    </li> -->
+                </ul>
+                <br>
+                <!-- <a class="cta" id="myBtn1"><button>My Latest Score</button></a>
+                <p class="textBox" id="myscore"></p> -->
+            </li>
+
+            <li class="footernav_item">
+                <h2 class="footernav_title">Useful Links</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#quiz">Quizzes</a>
+                    </li>
+                    <li>
+                        <a href="./faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer_legal">
+            <p> Copyright &copy; 2022, All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========================== footer section end ============================-->
+
+
+    <!-- ========================= javascripts ==================================== -->
+
+    <!-- for swiper function in quiz section -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <!-- main js files -->
+    <script src="./main.js "></script>
+    <script src="./scotQuiz/scotquiz.js "></script>
+
+</body>
+
+</html>

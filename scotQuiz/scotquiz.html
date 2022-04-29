@@ -1,0 +1,187 @@
+<!-- Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - quiz on Scotland 
+ References: https://fedingo.com/how-to-shuffle-array-in-javascript/
+           https://codepen.io/Liberacorpus/pen/bGrNvLW
+           https://www.w3schools.com/ai/tryit.asp?filename=tryai_chartjs_bars_colors_more -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scotland Quiz</title>
+    <link rel="stylesheet" href="./scotquiz.css" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- link for bar graph -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+
+    <!------------------- navbar starts here  ---------------------------------------------->
+    <nav class="nav">
+        <section class="Main_navbar">
+            <div class="logo">
+                <a href="../index.html">Know-How</a>
+            </div>
+
+            <!-- button -->
+            <button id="rules" onclick="myFunction();play()">Basic rules</button>
+            <audio id="audio" src="../images/audio1.mp4"></audio>
+            <div id="myDIV">
+                <p class="ele"> Basic Rules of this Quiz: </p>
+                <p class="ele">1. There are 10 questions in total. </p>
+                <p class="ele">2. There will be 15 seconds to answer each question.</p>
+                <p class="ele">3. Once the answer is selected, it can't be undone. </p>
+                <p class="ele">4. If the timer runs out or wrong answer is selected, the quiz will end. </p>
+                <p class="ele">6. The score is displayed as per the number of correct answers.</p>
+            </div>
+
+            <ul class="nav_links1">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+        </section>
+    </nav>
+
+    <!--------------------------- navbar ends here --------------------------------------------->
+
+    <!-- ======================== quiz landing start =========================================-->
+
+    <div class="landing" id="begin">
+        <div class="quiz_bkgr">
+            <p class="textBox">How Well Do you Know Scotland?</p>
+
+            <div class="align-text">
+                <button class="start">Start Quiz!</button>
+            </div>
+        </div>
+    </div>
+    <!-- ======================== quiz landing end ==============================================-->
+
+
+    <!-- ====================== Quiz End page start =============================================-->
+
+    <div class="end" id="quizEnd">
+        <p class="textBox" id="result"></p>
+        <div class="align-text">
+            <button class="start">Try Again</button>
+            <a class="quit" href="../index.html"><button>Quit</button></a>
+        </div>
+    </div>
+
+    <!-- ====================== Quiz End page end ================================================-->
+
+    <!-- ====================== Quiz questions and Life lines ===================================== -->
+
+    <div id="mainQuiz">
+        <div class="timer">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer_sec">15</div>
+        </div>
+        <div class="align-text" style="text-align: center;display: flex;justify-content: center;align-items: center;">
+            <div class="pointer myButton" id="restart">Restart
+            </div>
+
+            <!-- ------------ lifelines ----------------- -->
+            <img width="7%" src="../images/50-50.png" id="half" alt="" style="margin: 15px; cursor: pointer; " />
+            <img width="7%" src="../images/bestchoice.jpg" id="best" alt="" style="margin: 15px; cursor: pointer; border-radius:10px; border:2px solid black; " />
+            <img width="7%" src="../images/poll.jpg" id="poll" alt="" style="margin: 15px; cursor: pointer; border-radius:10px; border:2px solid black;" />
+        </div>
+
+        <!-- ---------------- bar chart -------------------- -->
+        <canvas id="myChart" style="width:100%;max-width:600px;background:white"></canvas>
+
+        <div class="quizQuestions">
+            <div class="question">
+                <p id="quizFrame"></p>
+            </div>
+            <div id="a"></div>
+            <div id="b"></div>
+            <div id="c"></div>
+            <div id="d"></div>
+        </div>
+    </div>
+
+    <!-- ======================== score display start ====================== -->
+
+    <div id="scoreDisplay">
+        <div class="score">
+            <div class="score" id="level9"> <img src="../images/medal.png" /> 100</div>
+            <div class="score" id="level8"> <img src="../images/medal.png" /> 90</div>
+            <div class="score" id="level7"> <img src="../images/medal.png" /> 80</div>
+            <div class="score" id="level6"> <img src="../images/medal.png" /> 70</div>
+            <div class="score" id="level5"> <img src="../images/medal.png" /> 60</div>
+            <div class="score" id="level4"> <img src="../images/medal.png" /> 50</div>
+            <div class="score" id="level3"> <img src="../images/medal.png" /> 40</div>
+            <div class="score" id="level2"> <img src="../images/medal.png" /> 30</div>
+            <div class="score" id="level1"> <img src="../images/medal.png" /> 20</div>
+            <div class="score" id="level0"> <img src="../images/medal.png" /> 10</div>
+            <div class="score" id="level-1"><img src="../images/medal.png" /> 0</div>
+        </div>
+    </div>
+
+    <!-- ================================ score display end ====================== -->
+
+
+    <!--================================= footer section start =======================-->
+
+    <footer class="footer">
+        <div class="footer_addr">
+            <h1 class="footer_logo">Know-How</h1>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+            <!-- <address>
+              Merchiston Campus, <br>
+              Edinburgh Napier University, Edinburgh EH10 5DT<br>   
+            </address> -->
+        </div>
+
+        <ul class="footer_nav">
+            <li class="footernav_item">
+                <br>
+                <a class="cta" id="myBtn"><button>My Latest Score</button></a>
+                <p class="textBox" id="myscore"></p>
+
+            </li>
+
+            <li class="footernav_item">
+                <h2 class="footernav_title">Useful Links</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer_legal">
+            <p> Copyright &copy; 2022, All Right Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ========================== footer section end ============================-->
+
+    <!-- javascript query -->
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="./scotquiz.js"></script>
+    <script src="../main.js"></script>
+
+</body>
+
+</html>

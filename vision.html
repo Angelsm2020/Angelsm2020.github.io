@@ -1,0 +1,166 @@
+<!-- Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - our vision page 
+ References: https://codepen.io/missmushroom/pen/ZjdPJb 
+             https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+             https://www.w3schools.com/html/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KnowHow Quiz/our vision</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./vision.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!------------------- navbar start here  --------------------->
+
+    <nav class="nav">
+        <section class="Main_navbar">
+            <div class="logo">
+                <a href="./index.html #home">Know-How</a>
+            </div>
+            <!-- button -->
+
+            <a class="cta" id="feedback" href="mailto:40537396@live.napier.ac.uk"><button>Feedback</button></a>
+
+            <ul class="nav_links1">
+
+                <li><a class="active" href="./index.html #home">Home</a></li>
+                <li>
+                    <a href="./index.html #aboutus">About Us &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./vision.html">Our Vision</a></li>
+                        <li><a href="./faq.html">FAQs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#quiz">Quizzes &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="./scotQuiz/scotquiz.html">Scotland Quiz</a></li>
+                        <li><a href="./digQuiz/digquiz.html">Digital Footprint Quiz</a></li>
+                        <li><a href="./gamerQuiz/gamerquiz.html">Gamer Quiz</a></li>
+                        <li><a href="./marsQuiz/marsquiz.html">Mars Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index.html #find">Find Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+            </div>
+        </section>
+    </nav>
+
+    <!--------------------------- navbar end here ------------------------->
+
+    <!-- ===================== vision section start ===================== -->
+
+    <div class="main_vision" id="vision">
+        <div class="image">
+            <div class="text">
+                <div class="vision_text">
+                    <h1>Our Vision</h1>
+                    <h4>The Market Leaders in Quizzes publishing since 2021</h4>
+                    <p>
+                        Know-How is the leading provider of knowledgeable and entertaining quizzes on the web, mobile devices, and at virtual events.
+                        </br>
+                        We believe in making knowledge fun for everyone.
+                        </br>
+                        Our purpose is to create mentally stimulating diversions that bring people together.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================== vision section end =============================== -->
+
+
+
+
+    <!-- ========================== history section start ================ -->
+
+    <div class="history_heading" id="history">
+        <h2 class="text-center">Know-How History</h2>
+        <h3 class="text-center">Founded December 25th, 2021, Know-How came to life with the response to its first quiz, "How Well You Do Know Scotland?".
+            </br>
+            Since then, it has continued to create quizzes for memory, fun and diversion.</h3>
+    </div>
+
+    <!-- ========================== aboutus section end ===================== -->
+
+
+    <!--================================= footer section start =======================-->
+    <footer class="footer">
+        <div class="footer_addr">
+            <h1 class="footer_logo">Know-How</h1>
+            <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>Contact Us</button></a>
+            <address>
+              Merchiston Campus, <br>
+              Edinburgh Napier University, Edinburgh EH10 5DT<br>   
+            </address>
+        </div>
+
+        <ul class="footer_nav">
+            <li class="footernav_item">
+                <h2 class="footernav_title">Important Information</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./privacy.html">Privacy Policy</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Terms of Use</a>
+                    </li> -->
+                </ul>
+                <br>
+                <!-- <a class="cta" href="mailto:40537396@live.napier.ac.uk"><button>My Scoreboard</button></a> -->
+            </li>
+
+            <li class="footernav_item">
+                <h2 class="footernav_title">Useful Links</h2>
+
+                <ul class="footernav_ul">
+                    <li>
+                        <a href="./index.html #home">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./index.html #quiz">Quizzes</a>
+                    </li>
+                    <li>
+                        <a href="./faq.html">FAQs</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer_legal">
+            <p> Copyright &copy; 2022, All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ========================== footer section end ============================-->
+
+
+    <!-- ========================= javascripts ==================================== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="./main.js "></script>
+    <script src="./quiz.js "></script>
+</body>
+
+</html>

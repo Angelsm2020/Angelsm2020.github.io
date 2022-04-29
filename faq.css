@@ -1,0 +1,256 @@
+/* Author: Shalu Madan
+ Matriculation number: 40537396 
+ Last date of modification: 29/04/2022
+ SET08101 – Web Technologies Coursework 2
+ website design for a quiz - faq page css 
+ reference: https://codepen.io/missmushroom/pen/ZjdPJb 
+            https://codepen.io/bdthemes/pen/powEgeG?editors=1010
+            https://www.w3schools.com/html/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Palette+Mosaic&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    transition: all .3s ease 0s;
+    background: #d48bcd;
+    text-align: center;
+}
+
+li,
+a,
+button,
+div {
+    color: #edf0f1;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ======================= faq section start ===================================== */
+
+ :root {
+    --d: 1000ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.faq_heading {
+    text-align: center;
+}
+
+.faq_heading h2 {
+    font-size: 4.5rem;
+    color: #371f1b;
+}
+
+.faq_heading h3 {
+    font-size: 1.5rem;
+    color: #8d4387;
+    padding: 5px;
+}
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .page-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .faq_heading h2 {
+        font-size: 2.5rem;
+    }
+    .faq_heading h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .page-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.faq_card {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+@media (min-width: 600px) {
+    .faq_card {
+        height: 350px;
+    }
+}
+
+.faq_card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+    transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.faq_card:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
+    transition: -webkit-transform calc(var(--d) * 2) var(--e);
+    transition: transform calc(var(--d) * 2) var(--e);
+    transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
+}
+
+.faq_card:nth-child(1):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.faq_card:nth-child(2):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.faq_card:nth-child(3):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.faq_card:nth-child(4):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.faq_card:nth-child(5):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.faq_card:nth-child(6):before {
+    background-image: url(./images/feedback1.jpg);
+}
+
+.content {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    -webkit-transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    -moz-transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    -ms-transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    -o-transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+}
+
+.content>*+* {
+    margin-top: 1rem;
+}
+
+.heading {
+    font-size: 2.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #371f1b;
+}
+
+.data-content {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.35;
+    color: #680357;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+    .faq_card:after {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .content {
+        -webkit-transform: translateY(calc(100% - 4.5rem));
+        transform: translateY(calc(100% - 4.5rem));
+    }
+    .content>*:not(.heading) {
+        opacity: 0;
+        -webkit-transform: translateY(1rem);
+        transform: translateY(1rem);
+        -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+        transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    }
+    .faq_card:hover,
+    .faq_card:focus-within {
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .faq_card:hover:before,
+    .faq_card:focus-within:before {
+        -webkit-transform: translateY(-4%);
+        transform: translateY(-4%);
+    }
+    .faq_card:hover:after,
+    .faq_card:focus-within:after {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .faq_card:hover .content,
+    .faq_card:focus-within .content {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    .faq_card:hover .content>*:not(.heading),
+    .faq_card:focus-within .content>*:not(.heading) {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-delay: calc(var(--d) / 8);
+        transition-delay: calc(var(--d) / 8);
+    }
+    .faq_card:focus-within:before,
+    .faq_card:focus-within:after,
+    .faq_card:focus-within .content,
+    .faq_card:focus-within .content>*:not(.heading) {
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+}
